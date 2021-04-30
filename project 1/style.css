@@ -1,3 +1,9 @@
+
+:root {
+    --sucess-color:green;
+    --error-color:red;
+}
+
 *{
 box-sizing: border-box;
 }
@@ -40,8 +46,8 @@ margin: 0 0 20px;
 }
 
 .form-control input{
-    border-radius: 5px;
-    border: 2px solid #efefef;
+    border-radius: 15px;
+    border: 2px solid black;
     display: block;
     width: 100%;
     padding: 10px;
@@ -53,5 +59,39 @@ margin: 0 0 20px;
     border-color: #7777;
 }
 
+.form-control.success input{
+    border-color: var(--sucess-color);
+}                                                                      
 
+.form-control.error input{
+    border-color:red;
+}   
+
+.form-control small{
+    color:red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control .error small{
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: visible;
+}
+
+.form button{
+    cursor: pointer;
+    background-color: navy;
+    border:2px solid navy;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+}
 
