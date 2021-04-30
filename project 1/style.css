@@ -67,15 +67,15 @@ margin: 0 0 20px;
     border-color:red;
 }   
 
-.form-control small{
-    color:red;
+.form-control p{
+    color:black;
     position: absolute;
     bottom: 0;
     left: 0;
     visibility: hidden;
 }
 
-.form-control .error small{
+.form-control.error p{
     color: red;
     position: absolute;
     bottom: 0;

@@ -9,14 +9,14 @@ const password2 = document.getElementById('password2');
 function showError(input, message){
   const formControl = input.parentElement;
   formControl.className = 'form-control error';
-  const small = formControl.querySelector('small');
-  small.innerText = message;
+  const p = formControl.querySelector('p');
+  p.innerText = message;
 }
 function showSuccess(input, message){
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
-    const small = formControl.querySelector('small');
-    small.innerText = message;
+    const p = formControl.querySelector('p');
+    p.innerText = message;
   }
 // create event listener for submit button 
 form.addEventListener('submit', function(e){
