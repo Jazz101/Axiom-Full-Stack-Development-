@@ -15,8 +15,8 @@ function showError(input, message){
 function showSuccess(input, message){
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
-    const p = formControl.querySelector('p');
-    p.innerText = message;
+    const small = formControl.querySelector('small');
+    small.innerText = message;
   }
 // create event listener for submit button 
 form.addEventListener('submit', function(e){

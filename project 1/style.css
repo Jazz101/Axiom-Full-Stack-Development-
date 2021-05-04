@@ -34,6 +34,7 @@ margin: 0 0 20px;
 }
 
 .form-control{
+    position: relative;
     margin-bottom: 10px;
     padding-bottom: 20px;
 }
@@ -67,21 +68,23 @@ margin: 0 0 20px;
     border-color:red;
 }   
 
-.form-control p{
-    color:black;
+.form-control small{
+    color:red;
     position: absolute;
     bottom: 0;
     left: 0;
     visibility: hidden;
 }
 
-.form-control.error p{
-    color: red;
+.form-control.error small{
+    color:red;
     position: absolute;
     bottom: 0;
     left: 0;
     visibility: visible;
 }
+
+
 
 .form button{
     cursor: pointer;
